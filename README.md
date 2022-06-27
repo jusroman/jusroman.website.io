@@ -13,3 +13,6 @@ print(r.url)
    
 # print status code
 print(r.status_code)
+
+message = 'Hello world'
+print(message)
