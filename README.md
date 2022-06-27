@@ -10,9 +10,19 @@ for i in range(2000, 3201):
 print ','.join(l)
 
 ```python
-def fact(x):
-    if x == 0:
-        return 1
-    return x * fact(x - 1)
-x = int(raw_input())
-print fact(x)
+
+'''get request to python.org using requests
+
+from jusroman.website.io import HTMLSession
+  session = HTMLSession()
+  r= session.get('https://python.org/')
+  
+  results = asession.run(get_pythonorg)
+  results # check the requests all returned a 200 code for success
+  
+  [<Response [200]>, <Response [200]>, <Response [200]>]
+  
+  # Each item in the results list is a response object and can be interacted with as such
+  for result in results:
+  print(result.html.url)
+
