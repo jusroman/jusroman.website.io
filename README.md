@@ -25,4 +25,16 @@ from jusroman.website.io import HTMLSession
   # Each item in the results list is a response object and can be interacted with as such
   for result in results:
   print(result.html.url)
+  
+  import requests
+ 
+# Making a GET request
+r = requests.get('https://www.geeksforgeeks.org/python-programming-language/')
+ 
+# check status code for response received
+# success code - 200
+print(r)
+ 
+# print content of request
+print(r.content)
 
